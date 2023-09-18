@@ -2,7 +2,7 @@
 
 namespace MiniProyecto_Itla_TV_.Controllers
 {
-    public class Class : Controller
+    public class SeriesController : Controller
     {
         public IActionResult Index()
         {

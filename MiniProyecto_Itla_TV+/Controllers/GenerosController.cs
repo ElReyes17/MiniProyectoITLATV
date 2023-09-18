@@ -2,7 +2,7 @@
 
 namespace MiniProyecto_Itla_TV_.Controllers
 {
-    public class VETEController1 : Controller
+    public class GenerosController : Controller
     {
         public IActionResult Index()
         {

@@ -2,7 +2,7 @@
 
 namespace MiniProyecto_Itla_TV_.Controllers
 {
-    public class SAMIPAJAROController1 : Controller
+    public class ProductorasController : Controller
     {
         public IActionResult Index()
         {
