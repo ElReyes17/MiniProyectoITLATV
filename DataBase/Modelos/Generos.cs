@@ -10,13 +10,13 @@ namespace DataBase.Modelos
     {
         public int Id { get; set; }
 
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } = null!;
 
         
         
         //Navegacion
 
-        public ICollection<SeriesGeneros> Propiedad_Navegacion { get; set; }
+        public ICollection<SeriesGeneros> SeriesGeneros { get; set; } = null!;
 
     }
 }
