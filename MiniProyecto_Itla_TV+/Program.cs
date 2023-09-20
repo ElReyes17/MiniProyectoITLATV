@@ -1,7 +1,15 @@
+using DataBase;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+var conn = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+builder.Services.AddDbContext<TVContext>(op => op.UseSqlServer(conn));
+
 
 var app = builder.Build();
 
