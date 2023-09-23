@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Servicios
 {
-    public class ServiciosGeneros //: IMantenimientoRepositorio<>
+    internal class ServiciosGeneros
     {
     }
 }

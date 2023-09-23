@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Servicios
 {
-    public class ServiciosProductoras //: IMantenimientoRepositorio<>
+    internal class ServiciosProductoras
     {
     }
 }

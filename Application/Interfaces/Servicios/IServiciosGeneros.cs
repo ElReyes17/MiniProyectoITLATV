@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Servicios
+namespace Application.Interfaces.Servicios
 {
-    internal class ServiciosSeries
+    internal interface IServiciosGeneros
     {
     }
 }
