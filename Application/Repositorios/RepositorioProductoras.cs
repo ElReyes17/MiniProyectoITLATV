@@ -1,4 +1,6 @@
-﻿using DataBase.Modelos;
+﻿using Application.Interfaces.Repositorios;
+using DataBase;
+using DataBase.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,31 +9,12 @@ using System.Threading.Tasks;
 
 namespace Application.Repositorios
 {
-    public class ServiciosProductoras : IMantenimientoRepositorio<Productoras>
+    public class RepositorioProductoras : MantenimientoRepostorio<Productoras>, IProductoraRepositorio
     {
-        public List<Productoras> ObtenerTodo()
-        {
-            throw new NotImplementedException();
-        }
 
-        public void Agregar(Productoras objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-
-        public void Actualizar(Productoras objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-
-
-        public void EliminarPorId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-
+        public RepositorioProductoras(TVContext context) : base(context) { }
+        
+                   
+        
     }
 }

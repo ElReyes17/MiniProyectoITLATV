@@ -1,4 +1,5 @@
-﻿using DataBase;
+﻿using Application.Interfaces.Repositorios;
+using DataBase;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.Repositorios
 {
-    public class MantenimientoRepostorio<T> : IRepositorioSeries<T> where T : class
+    public class MantenimientoRepostorio<T> : IMantenimientoRepositorio<T> where T : class
     {
         private readonly TVContext _contexto;
         
@@ -28,7 +29,14 @@ namespace Application.Repositorios
 
         public async Task<T> ObtenerPorId(int id)
         {
-            throw new NotImplementedException();
+                   
+          var busqueda = await _dbSet.FindAsync(id);
+           if (busqueda != null)
+            {
+                return busqueda;
+            }
+
+            throw new Exception("El ID INGRESADO no existe en la base de datos");
         }
 
         public async Task Agregar(T objeto)
@@ -36,16 +44,26 @@ namespace Application.Repositorios
             await _dbSet.AddAsync(objeto);
             await _contexto.SaveChangesAsync();
         }
+
         public async Task Actualizar(T objeto)
         {
-            throw new NotImplementedException();
+            _dbSet.Entry(objeto).State = EntityState.Modified;
+            await _contexto.SaveChangesAsync();
         }
 
        
 
         public async Task EliminarPorId(int id)
         {
-            throw new NotImplementedException();
+              var delete = await _dbSet.FindAsync(id);
+
+
+            if (delete != null)
+            
+            {
+                _dbSet.Remove(delete);
+                await _contexto.SaveChangesAsync();
+            }
         }
 
        

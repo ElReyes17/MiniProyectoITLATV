@@ -1,5 +1,4 @@
-﻿using Application.Repositorios;
-using DataBase.Modelos;
+﻿using DataBase.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces.Repositorios
 {
-    public interface IGeneroRepositorio : IRepositorioSeries<Generos>
+    public interface IGeneroRepositorio : IMantenimientoRepositorio<Generos>
     {
 
 

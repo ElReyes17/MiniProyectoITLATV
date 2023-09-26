@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.ViewModel
+namespace Application.ViewModel.Productoras
 {
     public class ProductorasViewModel
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; } = null!;
+
     }
 }

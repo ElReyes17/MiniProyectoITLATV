@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces.Repositorios
 {
-    public interface ISerieRepositorio : IRepositorioSeries<Series>
+    public interface ISerieRepositorio : IMantenimientoRepositorio<Series>
     {
 
 

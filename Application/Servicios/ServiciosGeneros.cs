@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Application.Servicios
 {
-    internal class ServiciosGeneros
+    public class ServiciosGeneros
     {
+        public ServiciosGeneros()
+        {
+            
+        }
+
+
+
     }
 }

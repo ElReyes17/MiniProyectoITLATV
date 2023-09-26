@@ -1,3 +1,7 @@
+using Application.Interfaces.Repositorios;
+using Application.Interfaces.Servicios;
+using Application.Repositorios;
+using Application.Servicios;
 using DataBase;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,7 +13,9 @@ var conn = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<TVContext>(op => op.UseSqlServer(conn));
-
+builder.Services.AddScoped(typeof(IMantenimientoRepositorio<>), typeof(MantenimientoRepostorio<>));
+builder.Services.AddScoped<IProductoraRepositorio,RepositorioProductoras>();
+builder.Services.AddScoped<IServiciosProductoras, ServiciosProductoras>();
 
 var app = builder.Build();
 

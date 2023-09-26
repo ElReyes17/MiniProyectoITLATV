@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.ViewModel.Generos;
+using Application.ViewModels.Generos;
 
 namespace Application.Interfaces.Servicios
 {
-    internal interface IServiciosGeneros
+    public interface IServiciosGeneros 
     {
+        Task<List<GenerosViewModel>> ObtenerTodo();
+
+        Task<GenerosViewModel> ObtenerPorId(int id);
+
+        Task Agregar(GuardarGenerosViewModel objeto);
+
+        Task Actualizar(GuardarGenerosViewModel objeto);
+
+        Task EliminarPorId(int id);
+
     }
 }

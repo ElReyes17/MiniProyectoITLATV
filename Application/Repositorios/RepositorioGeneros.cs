@@ -1,4 +1,6 @@
-﻿using DataBase.Modelos;
+﻿using Application.Interfaces.Repositorios;
+using DataBase;
+using DataBase.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,28 +9,9 @@ using System.Threading.Tasks;
 
 namespace Application.Repositorios
 {
-    public class RepositorioGeneros : IRepositorioSeries<Generos>
+    public class RepositorioGeneros : MantenimientoRepostorio<Generos>, IGeneroRepositorio
     {
-        public List<Generos> ObtenerTodo()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Agregar(Generos objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Actualizar(Generos objeto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void EliminarPorId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
+        public RepositorioGeneros(TVContext contexto) : base (contexto) {}
 
     }
 }
