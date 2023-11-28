@@ -30,6 +30,11 @@ namespace MiniProyecto_Itla_TV_.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(GuardarProductorasViewModel crear) {
 
+            if (!ModelState.IsValid)
+            {
+                return View("Create", crear);
+            }
+
             await _servicios.Agregar(crear);
             return RedirectToAction("Index");
         }
@@ -37,6 +42,7 @@ namespace MiniProyecto_Itla_TV_.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
+
             return View("Create", await _servicios.ObtenerPorId(id));
         }
 

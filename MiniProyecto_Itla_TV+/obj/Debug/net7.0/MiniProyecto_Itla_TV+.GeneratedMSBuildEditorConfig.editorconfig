@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MiniProyecto_Itla_TV_
+build_property.RootNamespace = MiniProyecto_Itla_TV_
+build_property.ProjectDir = C:\Users\eliot\Documents\PROGRAMACION III\Mini Proyecto Itla_TV+\Mini Proyecto Itla_TV+\MiniProyecto_Itla_TV+\MiniProyecto_Itla_TV+\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\eliot\Documents\PROGRAMACION III\Mini Proyecto Itla_TV+\Mini Proyecto Itla_TV+\MiniProyecto_Itla_TV+\MiniProyecto_Itla_TV+
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Generos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Generos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Generos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Home/Video.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWRlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Productoras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9yYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Productoras/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9yYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Productoras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9yYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Series/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Series/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Series/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/eliot/Documents/PROGRAMACION III/Mini Proyecto Itla_TV+/Mini Proyecto Itla_TV+/MiniProyecto_Itla_TV+/MiniProyecto_Itla_TV+/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pgkdwsynb9

@@ -1,0 +1,83 @@
+﻿@model Application.ViewModels.Series.GuardarSeriesViewModel 
+@{
+    bool modoEditar = Model.Id == 0 ? true : false;
+  
+}
+<div class="row mb-3">
+
+    <h2 class="text-center"> Mantenimiento de Series  </h2>
+</div>
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <div class="card">
+            <div class="card-header bg-success text-light">
+                <h4>@(modoEditar ? "Creando una Serie" : $"Editando Serie: {Model.Nombre}")</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="POST"  asp-controller="Series" asp-action="@(modoEditar ? "Create" : "EditPost")">
+                    
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nombre de Serie</label>
+                        <input asp-for="Nombre" type="text" class="form-control mb-3" /> 
+                        <span class="text-danger"asp-validation-for="Nombre"> </span>
+                    </div>
+
+                     <div class="mb-3">
+                        <label class="form-label">URL de la imagen</label>
+                        <input asp-for="Imagen" type="text" class="form-control mb-3"  /> 
+                        <span class="text-danger"asp-validation-for="Imagen"> </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Enlace de Video</label>
+                        <input asp-for="Enlace" type="text" class="form-control mb-3" />  
+                        <span class="text-danger"asp-validation-for="Enlace"> </span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ProductoraId"class="form-label">Productora</label>
+                        
+                        <select asp-for="ProductoraId" asp-items="@(new SelectList(Model.Productoras, "Id", "Nombre"))" type="number" class="form-select mb-3" > 
+                              <option value="0">Seleccione una Productora</option>
+               
+                        </select>
+                        <span asp-validation-for="ProductoraId" class="text-danger"> </span>
+                    </div>
+
+                     <div class="mb-3">
+                        <label asp-for="GeneroId1"class="form-label">Genero Primario</label>
+                        
+                        <select asp-for="GeneroId1" asp-items="@(new SelectList(Model.Generos, "Id","Nombre"))" type="number" class="form-select mb-3" > 
+                              <option value="0">Seleccione un Genero</option>
+               
+                        </select>
+                        <span asp-validation-for="GeneroId1" class="text-danger"> </span>
+                    </div>
+
+                     <div class="mb-3">
+                        <label asp-for="GeneroId2"class="form-label">Genero Secundario</label>
+                       
+                        <select asp-for="GeneroId2" asp-items="@(new SelectList(Model.Generos, "Id","Nombre"))" type="number" class="form-select mb-3" > 
+                              <option value="0">Seleccione un Genero</option>
+               
+                        </select>
+                        <span asp-validation-for="GeneroId2" class="text-danger"> </span>
+                    </div>
+                    
+                    
+                
+                    <input type="hidden" asp-for="Id"/>
+                
+                    <button type="submit" class="btn btn-success float-end mb-3">Agregar</button>
+                   
+                </form>
+               <a class="btn btn-success float-end mb-3" asp-controller="Series" asp-action="Index">Volver</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+

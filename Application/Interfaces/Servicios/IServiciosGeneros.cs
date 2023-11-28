@@ -7,7 +7,7 @@ namespace Application.Interfaces.Servicios
     {
         Task<List<GenerosViewModel>> ObtenerTodo();
 
-        Task<GenerosViewModel> ObtenerPorId(int id);
+        Task<GuardarGenerosViewModel> ObtenerPorId(int id);
 
         Task Agregar(GuardarGenerosViewModel objeto);
 

@@ -1,5 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Application.ViewModels.Generos.GuardarGenerosViewModel 
 @{
+    bool modoEditar = Model.Id == 0 ? true : false;
+  
 }
+<div class="row mb-3">
+
+    <h2 class="text-center"> Mantenimiento de Generos  </h2>
+</div>
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <div class="card">
+            <div class="card-header bg-success text-light">
+                <h4>@(modoEditar ? "Creando un Genero" : $"Editando Genero: {Model.Nombre}")</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="POST"  asp-controller="Generos" asp-action="@(modoEditar ? "Create" : "EditPost")">
+                    
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nombre de Generos</label>
+                        <input asp-for="Nombre" type="text" class="form-control mb-3" />  
+                        <span class="text-danger"asp-validation-for="Nombre"> </span>
+                    </div>
+                    
+                
+                    <input type="hidden" asp-for="Id"/>
+                
+                    <button type="submit" class="btn btn-success float-end mb-3">Agregar</button>
+                   
+                </form>
+               <a class="btn btn-success float-end mb-3" asp-controller="Generos" asp-action="Index">Volver</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+

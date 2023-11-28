@@ -27,6 +27,17 @@ namespace Application.Repositorios
             return await _dbSet.ToListAsync();
         }
 
+        public async Task<List<T>> ObtenerTodoConInclusion(List<string> propiedades)
+        {
+            var query = _dbSet.AsQueryable();
+            foreach(string propiedad in propiedades)
+            {
+                query.Include(propiedad);
+            }
+
+            return await query.ToListAsync();
+        }
+
         public async Task<T> ObtenerPorId(int id)
         {
                    
@@ -59,7 +70,7 @@ namespace Application.Repositorios
 
 
             if (delete != null)
-            
+           
             {
                 _dbSet.Remove(delete);
                 await _contexto.SaveChangesAsync();

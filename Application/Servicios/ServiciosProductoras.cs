@@ -19,7 +19,7 @@ namespace Application.Servicios
 
         public async Task<List<ProductorasViewModel>> ObtenerTodo()
         {
-            var listaProductoras = await _repositorioProductora.ObtenerTodo();
+            var listaProductoras = await _repositorioProductora.ObtenerTodoConInclusion(new List<string> {"Series"});
             
             return listaProductoras.Select(productora => new ProductorasViewModel { 
             

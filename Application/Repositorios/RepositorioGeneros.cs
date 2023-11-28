@@ -11,7 +11,9 @@ namespace Application.Repositorios
 {
     public class RepositorioGeneros : MantenimientoRepostorio<Generos>, IGeneroRepositorio
     {
+        
         public RepositorioGeneros(TVContext contexto) : base (contexto) {}
 
+       
     }
 }

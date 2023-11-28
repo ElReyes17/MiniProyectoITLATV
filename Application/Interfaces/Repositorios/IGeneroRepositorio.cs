@@ -10,7 +10,8 @@ namespace Application.Interfaces.Repositorios
     public interface IGeneroRepositorio : IMantenimientoRepositorio<Generos>
     {
 
-
+     
+        
 
     }
 }

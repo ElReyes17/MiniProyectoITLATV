@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces.Repositorios;
 using DataBase;
 using DataBase.Modelos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,14 @@ namespace Application.Repositorios
 {
     public class RepositorioSeries : MantenimientoRepostorio<Series>, ISerieRepositorio
     {
+   
+
+
         public RepositorioSeries(TVContext contexto) : base(contexto) { }
         
-            
+
+
+       
 
     }
 }

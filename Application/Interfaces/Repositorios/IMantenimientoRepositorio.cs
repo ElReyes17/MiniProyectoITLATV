@@ -11,11 +11,15 @@ namespace Application.Interfaces.Repositorios
 
         Task<List<T>> ObtenerTodo();
 
+        Task<List<T>> ObtenerTodoConInclusion(List<string> propiedad);
+
         Task<T> ObtenerPorId(int id);
 
         Task Agregar(T objeto);
 
         Task Actualizar(T objeto);
+
+
 
         Task EliminarPorId(int id);
 

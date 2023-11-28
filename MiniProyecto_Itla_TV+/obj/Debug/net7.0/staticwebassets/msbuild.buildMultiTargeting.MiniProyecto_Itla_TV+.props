@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MiniProyecto_Itla_TV+.props" />
+</Project>

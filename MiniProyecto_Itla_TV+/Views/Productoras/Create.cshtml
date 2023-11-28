@@ -21,7 +21,8 @@
                     
                     <div class="mb-3">
                         <label class="form-label">Nombre de Productora</label>
-                        <input asp-for="Nombre" type="text" class="form-control mb-3" required />  
+                        <input asp-for="Nombre" type="text" class="form-control mb-3" />  
+                        <span class="text-danger"asp-validation-for="Nombre"> </span>
                     </div>
                     
                 

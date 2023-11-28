@@ -13,9 +13,20 @@ var conn = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<TVContext>(op => op.UseSqlServer(conn));
+
 builder.Services.AddScoped(typeof(IMantenimientoRepositorio<>), typeof(MantenimientoRepostorio<>));
+
 builder.Services.AddScoped<IProductoraRepositorio,RepositorioProductoras>();
 builder.Services.AddScoped<IServiciosProductoras, ServiciosProductoras>();
+
+builder.Services.AddScoped<IGeneroRepositorio, RepositorioGeneros>();
+builder.Services.AddScoped<IServiciosGeneros, ServiciosGeneros>();
+
+builder.Services.AddScoped<ISerieRepositorio, RepositorioSeries>();
+builder.Services.AddScoped<IServiciosSeries, ServiciosSeries>();
+
+builder.Services.AddScoped<ISeriesGenerosRepositorio, SeriesGenerosRepositorio>();
+builder.Services.AddScoped<IServiciosSeriesGeneros, ServiciosSeriesGeneros>();
 
 var app = builder.Build();
 

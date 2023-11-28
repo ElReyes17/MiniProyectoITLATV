@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MiniProyecto_Itla_TV+.props" />
+</Project>

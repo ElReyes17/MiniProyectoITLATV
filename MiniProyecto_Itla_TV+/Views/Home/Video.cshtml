@@ -1,0 +1,19 @@
+﻿@model Application.ViewModels.Series.GuardarSeriesViewModel
+
+
+
+<div class="row mb-3"> 
+    
+  <h2 class="text-center nav-link text-black fw-bold"> Trailer de @Model.Nombre </h2>
+
+  <iframe width="560" height="600" src="@Model.Enlace" title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+   <a asp-controller="Home" asp-action="Index" class="btn btn-success">Volver atras</a>
+</div> 
+
+
+
+
+
+

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Application.ViewModel.Generos;
+using Application.ViewModels.SeriesGeneros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +18,11 @@ namespace Application.ViewModel.Series
 
         public string Enlace { get; set; } = null!;
 
-        public string Productora {get; set;} = null!;
+        public string NombreProductora {get; set;} = null!;
+
+        public int ProductoraId { get; set; }
+
+        public List<string> SeriesGeneros { get; set; } = null!;
 
         public string Genero1 {get; set;} = null!;
 

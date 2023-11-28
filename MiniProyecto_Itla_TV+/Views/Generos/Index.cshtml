@@ -1,1 +1,60 @@
-﻿
+﻿@* Strong type views *@
+@model List<Application.ViewModel.Generos.GenerosViewModel>
+
+
+<div class="row mb-3">
+
+    <h2 class="text-center nav-link text-dark fw-bold"> Mantenimiento De Generos </h2>
+  
+
+</div>
+
+<div class="row align-content-center">
+    <div class="col-4 offset-4">
+       
+        <div class="card">
+            <div class="card-header bg-dark text-light">
+                Lista de Generos
+                  <div class="text-end">
+        <a class="btn btn-success float-end" asp-controller="Generos" asp-action="Create">Nuevo Genero</a>
+    </div>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>                         
+                            <th scope="col">Id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Nombre</td>
+                             <td>
+    <a class="btn btn-primary btn-edit" asp-controller="Generos" asp-action="Edit" asp-route-id="@item.Id">
+        <i class="fa-solid fa-pen-to-square"></i>
+    </a>
+      </td>
+     <td>
+      
+        <a asp-controller="Generos" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+            <i class="fa-solid fa-eraser"></i>
+      </a>
+    
+    </td>
+           </tr>    
+                                                   
+                        }
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/47ea8ef61d.js" crossorigin="anonymous"></script>
+    </div>
+</div>

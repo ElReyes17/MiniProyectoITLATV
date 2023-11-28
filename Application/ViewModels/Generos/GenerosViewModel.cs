@@ -9,7 +9,9 @@ namespace Application.ViewModel.Generos
     public class GenerosViewModel
     {
         public int Id { get; set; }
+        
         public string Nombre { get; set; } = null!;
+
 
     }
 }
